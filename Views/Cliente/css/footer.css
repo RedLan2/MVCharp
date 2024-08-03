@@ -1,0 +1,30 @@
+footer{
+    background-color: var(--light-tertiary-color);
+}
+
+footer .footer_con{
+    text-align: center;
+    padding: 6rem 2rem 1rem;
+    max-width: 47rem;
+}
+
+footer .footer_con .footer_contato span{
+    display: block;
+    font-weight: 500;
+}
+
+footer .footer_con .footer_copyright{
+   font-size: 1.4rem;
+}
+.footer_imagens {
+    display: flex;
+    justify-content: center;
+    gap: 3rem; /* Espaço entre as imagens */
+    margin-bottom: 2rem;
+}
+
+.footer_imagens img {
+    max-width: 100px; /* Ajuste conforme necessário */
+    height: 6rem;
+    border-radius: 0px; /* Bordas levemente arredondadas */
+}

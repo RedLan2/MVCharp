@@ -1,0 +1,64 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar_content{
+    padding: 3rem 4rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar #logo {
+    width: 135px;
+    height: 25px;
+}
+.navbar .navbar_content .navbar__links li{
+    display: inline-block;
+}
+
+.navbar .navbar_content .navbar__links li:not(:last-of-type){
+    margin-right: 2rem;
+}
+.navbar .navbar_content .navbar__links a{
+    padding: 1rem;
+    display: inline-block;
+}
+.navbar .navbar_content .navbar__links a:hover{
+    color: wheat;
+}
+.navbar_toggle{
+    display: none; /* Esconder o botão em telas maiores */
+}
+@media only screen and (max-width: 768px) {
+    .navbar_toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .navbar__links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 60px; /* Ajuste conforme necessário */
+        left: 0;
+        background-color: #fff; /* Ajuste conforme necessário */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar__links.active {
+        display: flex;
+    }
+
+    .navbar__links li {
+        margin: 1rem 0;
+    }
+}

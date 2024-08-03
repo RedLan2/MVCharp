@@ -1,0 +1,151 @@
+@model ProjetoMVC.Models.Cliente
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\extends.css">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Titulo -->
+    <title>MR Consultoria</title>
+
+</head>
+<body>
+    <script src="scripts/index.js"></script>
+    <nav class="navbar">
+          <div class="navbar_content max-width mb-0 ">
+                <a href="/">
+                    <img src="css/imagens/logo2.jpeg" alt="MR Consultoria" id="logo">
+                </a>
+                <button class="navbar_toggle" aria-label="Abrir Menu">
+                    &#9776;
+                </button>
+                <!--linsk-->
+                <ul class="navbar__links">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#skills">Serviços</a></li>
+                    <li><a href="#processos">Processos</a></li>
+                    <li><a href="#footer">Investimento</a></li>
+                </ul>
+          </div>
+    </nav>
+            <!--Header-->
+            <header id="header" class="max-width">
+                    <div class="header_left">
+                        <h1>CONSULTORIA FINANCEIRA E DE
+                            INVESTIMENTOS
+                            MR CONSULTORIA</h1>
+                            <h2>Sobre mim</h2>
+                            <p>
+                                31 anos, Casado. Formado em
+                                Gestão Financeira com Pós
+                                Graduação Em Mercado Financeiro e
+                                de Capitais pela Unifor, Investidor
+                                desde 2015. 9 anos trabalhando com
+                                finanças.
+                                Mais de 70 clientes atendidos.
+                            </p>
+                            
+                    </div>
+         
+                <!--    <div class="header_right">
+                            <div class="header_imagem">
+                                <img src="css/imagens/imagem1.jpeg" alt="Renan" class="renan">
+                            </div>
+                    </div>-->
+
+            </header>
+            <section id="skills" class="skills">
+                <div class="skills__content max-width">
+                    <h2 class="tertiary-title">Serviços inclusos</h2>
+                    <p class="description">Serviços inclusos na consultoria</p>
+                    <div class="skills__lists">
+                        <ul id="list1">
+                            <li><p>Elaboração de perfil do investidor</p></li>
+                            <li><p>Orientação sobre investimentos a partir do perfil</p></li>
+                            <li><p>Instrução sobre plataformas e corretoras de investimento</p></li>
+                            <li><p>Elaboração de Estratégias de renda fixa e variável</p></li>
+                            <li><p>Elaboração de Estratégias de reinvestimento</p></li>
+                           
+                        </ul>
+                        <ul id="list2">
+                            <li><p>Orientação sobre funcionamento de:</p></li>
+                            <li><p>Fundos de investimentos</p></li>
+                            <li><p>Ativos de renda fixa</p></li>
+                            <li><p>FIDCS</p></li>
+                            <li><p>Fundos imobiliário</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="processos" class="processos">
+                <div class="processos_conteudo mb-m">
+                        <h3 class="tertiary-title">Etapas da Consultoria</h3>
+                        <li><p> Primeira reunião: Entendendo o cliente e seus objetivos</p></li>
+                        <li><p>Segunda reunião: Avaliação e busca das melhores estratégias</p></li>
+                        <li><p>Terceira reunião: Apresentação e entrega das soluções estudadas</p></li>
+                        <li><p>Demais reuniões com acompanhamento das soluções estudadas</p></li>
+                        <li><p>Acesso ao consultor por whatsapp para dúvidas e questionamentos</p></li>
+                        
+                </div>
+            </section>
+
+            <h4>Cadastro Previo</h4>
+            <div class="row">
+                <div class="col-md-4">
+                    <form asp-action="Index">
+                        <div class="form-group">
+                                <label asp-for="Nome" class="control-label"></label>
+                                <input asp-for="Nome" class=form-control>
+                        </div>
+                         <div class="form-group">
+                                <label asp-for="Numero" class="control-label"></label>
+                                <input asp-for="Numero" class=form-control>
+                        </div>
+                         <div class="form-group">
+                                <label asp-for="Email" class="control-label"></label>
+                                <input asp-for="Email" class=form-control>
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="Criar" class="btn btn-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+
+
+            <footer id="footer">
+                    <div class="footer_con max-width mb-0">
+                        <h2 class="tertiary-title mb-s">Investimento</h2>
+                        <p class="mb-m">
+                            R$99,90 mensal (Contrato de 12meses)
+                        </p>
+                        <p>
+                            Formas de pagamento: Cartão de crédito recorrente, Pix ou boleto. </p>
+                        <div class="footer_imagens">
+                            <img src="css/imagens/cartaoicon.png" alt="Cartao">
+                            <img src="css/imagens/pixicon.png" alt="Pix">
+                            <img src="css/imagens/boletoicon.png" alt="Boleto">
+                        </div>
+                        <div class="footer_contato mb-m">
+                            <span class="mb-g">(85)111111111</span>
+                        </div>
+                        <p class="footer_copyright">
+                            © 2023 Mr Consultoria. Todos os direitos reservados.
+                        </p>
+                    </div>
+            </footer>            
+        
+            
+</body>
+</html>

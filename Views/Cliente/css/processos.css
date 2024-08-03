@@ -1,0 +1,13 @@
+.processos{
+padding-bottom: 1rem;
+}
+.processos h3{
+    text-align: center;
+    margin-bottom: 2%;
+}
+.processos li{
+    list-style: none;
+    text-align: center;
+    padding-bottom: 2%;
+    margin-bottom: -1.5%;
+}
